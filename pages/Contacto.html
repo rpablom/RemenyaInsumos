@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insumos cerveceros - Remenya</title>
+	<link rel="shortcut icon" href="../img/favicon.png">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<!-- INICIO Bloque botonera -->
+	<nav>
+		<a href="../index.html">
+			<img class="botonera__logo--s" src="../img/remenya.png" alt="Logo de Remenya, insumos cerveceros">
+		</a>
+		<ul >
+			<li>
+				<a href="../Index.html">Inicio</a>
+			</li>
+			<li>
+				<a href="../pages/Insumos.html">Insumos</a>
+			</li>
+			<li>
+				<a href="../pages/Kits.html">Kits</a>
+			</li>
+			<li>
+				<a href="../pages/Accesorios.html">Accesorios</a>
+			</li>
+			<li>
+				<a href="../pages/Contacto.html">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- FIN Bloque botonera -->
+
+	<!-- INICIO Bloque encabezado -->
+	<header>
+		<img class="encabezado__imagen--ajuste" 
+		src="../img/header.jpg" alt="El placer de cocinar tu propia cerveza">
+	</header>
+	<!-- FIN Bloque encabezado -->
+
+	<main>
+		<section>
+			<form action="envio.php">
+				<fieldset class="formulario__contacto">
+				<legend><h5>Información de contacto</h5></legend>
+					<label for="name">Nombre y apellido</label>
+					<input type="text" id="name">
+					<div>
+					<label for="correo electrónico">E-mail</label>
+					<input type="email" id="correo electrónico">
+					</div>
+					<label for="phone">Teléfono de contacto</label>
+					<input type="text" id="phone" placeholder="10 dígitos sin 0 y sin 15">
+				</fieldset>
+				<fieldset class="formulario__contacto--agrup">
+					<legend><h5>¿Desde dónde nos contacta?</h5></legend>
+					<label for="localidad">Localidad</label>
+					<select name="" id="">
+						<option value="sf">Santa Fe</option>
+						<option value="st">Santo Tomé</option>
+						<option value="sv">Sauce Viejo</option>
+						<option value="rc">Rincón</option>
+						<option value="cn">Colastiné Norte</option>
+						<option value="cs">Colastiné Sur</option>
+						<option value="al">Arroyo Leyes</option>
+						<option value="ol">Otra localidad</option>
+					</select>
+				</fieldset>
+				<fieldset class="formulario__contacto--agrup">
+					<legend><h5>Motivo de consulta</h5></legend>
+					<label for="insumos">Insumos</label>
+					<input type="checkbox" id="insumos">
+					<br>
+					<label for="kits">KITS</label>
+					<input type="checkbox" id="kits">
+					<br>
+					<label for="accesorios">Accesorios</label>
+					<input type="checkbox" id="accesorios">
+					<br>
+					<label for="otras consultas">Otras consultas</label>
+					<input type="checkbox" id="otras consultas">
+				</fieldset>
+				<fieldset class="formulario__contacto--agrup">
+				<legend><h5>Preferencias de contacto</h5></legend>
+					<label for="email">Correo electrónico</label>
+					<input type="radio" id="email" name="Preferencia de contacto">
+					<br>
+					<label for="telefono">Teléfono</label>
+					<input type="radio" id="telefono" name="Preferencia de contacto">
+				</fieldset>
+				<fieldset class="formulario__contacto">
+				<legend><h5>Amplíe su consulta</h5></legend>
+					<textarea name="" id="" cols="35" rows="10" placeholder="Deje su consulta y lo contactaremos"></textarea >
+					<br>
+					<input type="reset" value="Cancelar">
+					<input type="submit" value="Enviar">
+				</fieldset>
+			</form>
+		</section>
+	</main>
+	<!-- INICIO Bloque pie-->
+	<footer class="pie">	
+		<article class="pie__mapa--ajustes">
+			<iframe class="pie__mapa--interno" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1167.000709131987!2d-60.69119605413445!3d-31.620251688099206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9e59251bc69%3A0x1d929538258f8eb8!2sMarcial%20Candioti%205354%2C%20S3002%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1655758593712!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</article>
+		<article class="pie__redes--ajustes">
+			<h6>Encontranos en</h6>
+			<a href="https://www.facebook.com/pages/category/Local-business/Remenya-Insumos-Cerveceros-316370479062562/" target="_blank">
+				<img class="pie__icono--s" src="../img/facebook.svg" alt="Facebook de Remenya">
+			</a>
+			<a href="https://www.instagram.com/remenya.insumoscerveceros/?hl=es" target="_blank">
+				<img class="pie__icono--s" src="../img/instagram.svg" alt="Instagram de Remenya">
+			</a>
+		</article>
+		<article  class="pie__texto">
+			<p class="pie__texto--md"> Marcial Candioti 5354 </p>
+			<p class="pie__texto--md">TE: 0342 4606834
+			</p>
+			<p class="pie__texto--md">E-Mail: remenya@insumoscerveceros.com.ar</p>
+		</article>
+	</footer>
+	<!-- FIN Bloque pie-->
+</body>
+</html>
