@@ -9,13 +9,22 @@ html{
 	font-size: 62.5%;
 }
 
+/*Modif para bootstrap*/
+
+/*.botonera__logo--s --> widht de 10% a 25%
+*/
+
+.logo__start{
+	justify-content: start;
+}
+
 /*MOBILE FIRST*/
 
 /*BLOQUES*/
 /*Bloque botonera*/
 
 .botonera__logo--s{
-	width: 10%;
+	width: 25%;
 	height: auto;
 	text-decoration: none;
 	padding: 0.5rem;
@@ -322,7 +331,7 @@ table tr td{
 		}
 	}
 
-/*Resolución 768 a 1999*/
+/*Resolución 768 a 1199*/
 
 @media only screen and (min-width: 768px){
 
