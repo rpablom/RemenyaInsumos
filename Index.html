@@ -5,31 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Insumos cerveceros - Remenya</title>
 	<link rel="shortcut icon" href="./img/favicon.png">
-	<link rel="stylesheet" href="./css/style.css">
+   	<link rel="stylesheet" href="./css/bootstrap.min.css">
+   	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<!-- INICIO Bloque botonera -->
-	<nav>
-		<a href="./index.html">
-			<img class="botonera__logo--s" src="./img/remenya.png" alt="Logo de Remenya, insumos cerveceros">
-		</a>
-		<ul>
-			<li>
-				<a href="./Index.html">Inicio</a>
-			</li>
-			<li>
-				<a href="./pages/Insumos.html">Insumos</a>
-			</li>
-			<li>
-				<a href="./pages/Kits.html">Kits</a>
-			</li>
-			<li>
-				<a href="./pages/Accesorios.html">Accesorios</a>
-			</li>
-			<li>
-				<a href="./pages/Contacto.html">Contacto</a>
-			</li>
-		</ul>
+	<nav class="navbar navbar-expand-xl" id="botonera">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="index.html"><img class="margin" src="./img/remenya.png" alt="Logo de Remenya"></a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+	        <li>
+	          <a class="nav-link" href="./pages/insumos.html">Insumos</a>
+	        </li>
+	        <li>
+	          <a class="nav-link" href="./pages/kits.html">Kits</a>
+	        </li>
+	       	<li>
+	          <a class="nav-link" href="./pages/accesorios.html">Accesorios</a>
+	        </li>
+	        <li>
+	          <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
 	</nav>
 	<!-- FIN Bloque botonera -->
 
@@ -47,11 +50,45 @@
 					<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Iure, temporibus, ut! Enim, debitis, officiis. Doloribus, minus aliquid quas quos, ab incidunt facilis voluptatem doloremque, unde dolorem fuga officiis laborum eos.</p>
 					<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Iure, temporibus, ut! Enim, debitis, officiis. Doloribus, minus aliquid quas quos, ab incidunt facilis voluptatem doloremque, unde dolorem fuga officiis laborum eos.</p>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae tempore nostrum recusandae, vel ut accusamus, nulla. Amet voluptatum ipsa eos, iste veniam unde, odit veritatis doloribus. Enim nulla numquam molestiae!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Quas non libero ratione commodi molestias earum praesentium voluptas, nulla modi magni quam vitae, voluptatem cumque eveniet fuga ut consequuntur, soluta. Alias.</p>
 			</article>
 			<article id="galeria" class="contenido__galeria--ajustes">
 				<h3>Galería de imágenes</h3>
-				<img src="./img/imagen-izquierda.jpg" alt="Galería de imágenes">
+					<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="carousel-item">
+					      <img src="img/galería/gi1.jpg" class="d-block w-100" alt="Imagen 1">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="img/galería/gi6.jpg" class="d-block w-100" alt="Imagen 6">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="img/galería/gi2.jpg" class="d-block w-100" alt="Imagen 2">
+					    </div>
+					    <div class="carousel-item active">
+					      <img src="img/galería/gi3.jpg" class="d-block w-100" alt="Imagen 3">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="img/galería/gi4.jpg" class="d-block w-100" alt="Imagen 4">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="img/galería/gi5.jpg" class="d-block w-100" alt="Imagen 5">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="img/galería/gi7.jpg" class="d-block w-100" alt="Imagen 7">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="img/galería/gi8.jpg" class="d-block w-100" alt="Imagen 8">
+					    </div>
+					  </div>
+					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Next</span>
+					  </button>
+					</div>
 			</article>
 			<article id="mision" class="contenido__quienessomos--ajustes">
 				<h2>Nuestra misión</h2>
@@ -84,5 +121,6 @@
 		</article>
 	</footer>
 	<!-- FIN Bloque pie-->
+	<script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
