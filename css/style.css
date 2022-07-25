@@ -9,42 +9,48 @@ html{
 	font-size: 62.5%;
 }
 
-/*Modif para bootstrap*/
-
-/*.botonera__logo--s --> widht de 10% a 25%
-*/
-
-.logo__start{
-	justify-content: start;
-}
-
 /*MOBILE FIRST*/
 
 /*BLOQUES*/
 /*Bloque botonera*/
 
-.botonera__logo--s{
-	width: 25%;
+.margin{
+	margin-right: auto;
+}
+
+.marginy{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#botonera img{
+	width: 20%;
 	height: auto;
 	text-decoration: none;
 	padding: 0.5rem;
+}
+
+
+
+#botonera ul li a{
+	text-decoration: none;
+	font-size: 3rem;
+	color: rgb(67,99,43);
+}
+
+#botonera ul li a:hover{
+	color: rgb(42,71,45);
+	font-weight: 800;
 }
 
 /*Bloque contenido*/
 
 .contenido__galeria--ajustes{
 	width: 90%;
-	height: inherit;
+	height: 90%;
 	margin: 0.5%;
-	border: solid rgb(85,131,50) 1px;
 	overflow: auto;
-	background-color: rgb(185,194,193,.85);
 	align-content: center;
-}
-
-.contenido__maincontacto{
-	display: flex;
-	align-items: center;
 }
 
 .contenido__quienessomos--ajustes{
@@ -69,7 +75,6 @@ html{
 	text-align: center;
 	background-color: rgb(214,201,162,.9);
 	height: inherit;
-	margin: 1% 1%;
 }
 
 .formulario__contacto--agrup{
@@ -204,8 +209,10 @@ h3{
 	text-transform: uppercase;
 	width: 100%;
 	text-align: center;
-	font-size: 2.5rem;
-	text-decoration-color: green;	
+	font-size: 2rem;
+	text-decoration-color: green;
+	border: solid rgb(85,131,50) 1px;
+	background-color: rgb(185,194,193,.85);	
 }
 
 h4{
@@ -297,10 +304,6 @@ nav ul li a{
 	color: rgb(67,99,43);
 }
 
-nav ul li a:hover{
-	color: rgb(42,71,45);
-	font-weight: 800;
-}
 p{
 	color: rgb(214,201,162);
 	font-size: 1.2rem;
@@ -391,6 +394,10 @@ table tr td{
 		font-size: 2rem;	
 		}
 	
+	h3{
+		font-size: 2.2rem;
+	}
+
 	h4{
 		font-size: 3rem;
 		}
@@ -415,6 +422,11 @@ table tr td{
 /*Resolución desde 1200*/
 
 @media only screen and (min-width: 1200px){
+
+.margin{
+	margin-right: auto;
+	margin-left: auto;
+}
 
 
 	.contenido__grid--mainindex{
@@ -457,6 +469,10 @@ table tr td{
 		font-size: 2.5rem;	
 		}
 
+	h3{
+		font-size: 4rem;
+	}
+
 	h4{
 		font-size: 4rem;
 		}
@@ -472,10 +488,6 @@ table tr td{
 	label{
 		font-size: 2.5rem;
 	}
-
-	nav{
-		position: sticky;
-		}
 
 	p{
 		font-size: 2rem;
