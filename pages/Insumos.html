@@ -5,31 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Insumos cerveceros - Remenya</title>
 	<link rel="shortcut icon" href="../img/favicon.png">
+   	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 	<!-- INICIO Bloque botonera -->
-	<nav>
-		<a href="../index.html">
-			<img class="botonera__logo--s" src="../img/remenya.png" alt="Logo de Remenya, insumos cerveceros">
-		</a>
-		<ul >
-			<li>
-				<a href="../Index.html">Inicio</a>
-			</li>
-			<li>
-				<a href="../pages/Insumos.html">Insumos</a>
-			</li>
-			<li>
-				<a href="../pages/Kits.html">Kits</a>
-			</li>
-			<li>
-				<a href="../pages/Accesorios.html">Accesorios</a>
-			</li>
-			<li>
-				<a href="../pages/Contacto.html">Contacto</a>
-			</li>
-		</ul>
+	<nav class="navbar navbar-expand-xl" id="botonera">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="../index.html"><img class="margin" src="../img/remenya.png" alt="Logo de Remenya"></a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+	        <li>
+	          <a class="nav-link" href="../pages/insumos.html">Insumos</a>
+	        </li>
+	        <li>
+	          <a class="nav-link" href="../pages/kits.html">Kits</a>
+	        </li>
+	       	<li>
+	          <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
+	        </li>
+	        <li>
+	          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
 	</nav>
 	<!-- FIN Bloque botonera -->
 
@@ -242,5 +245,6 @@
 		</article>
 	</footer>
 	<!-- FIN Bloque pie-->
+	<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
