@@ -75,6 +75,7 @@ html{
 	text-align: center;
 	background-color: rgb(214,201,162,.9);
 	height: inherit;
+	margin: 1% 1%;
 }
 
 .formulario__contacto--agrup{
@@ -83,9 +84,8 @@ html{
 	align-content: center;
 	text-align: center;
 	background-color: rgb(214,201,162,.9);
-	width: 28%;
-	height: inherit;
-}
+	margin: 2.7%;
+	}
 
 /*Bloque pie*/
 
@@ -323,16 +323,6 @@ table tr td{
 	text-align: center;
 	align-content: center;
 }
-
-/*Resolución a partir de 530*/
-
-@media only screen and (min-width: 530px){
-
-	.formulario__contacto--agrup{
-			width: 30%;
-			margin: 1%;
-		}
-	}
 
 /*Resolución 768 a 1199*/
 
