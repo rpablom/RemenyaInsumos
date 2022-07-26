@@ -14,22 +14,16 @@ html{
 /*BLOQUES*/
 /*Bloque botonera*/
 
-.margin{
-	margin-right: auto;
-}
-
 #botonera img{
-	width: 20%;
+	width: 50px;
 	height: auto;
 	text-decoration: none;
 	padding: 0.5rem;
 }
 
-
-
 #botonera ul li a{
 	text-decoration: none;
-	font-size: 3rem;
+	font-size: 2.2rem;
 	color: rgb(67,99,43);
 }
 
@@ -323,6 +317,14 @@ table tr td{
 
 @media only screen and (min-width: 768px){
 
+	#botonera img{
+			width: 70px;
+		}
+
+	#botonera ul li a{
+			font-size: 2.5rem;
+		}
+
 	.contenido__mainindex{
 			display: grid;
 			width: 100%;
@@ -404,14 +406,34 @@ table tr td{
 	}
 }
 
+/*Resolución 992 a 1199*/
+
+@media only screen and (min-width: 992px){
+
+	#botonera img{
+		width: 100px;
+	}
+
+	#botonera ul li a{
+		font-size: 2.8rem;
+	}
+}
+
 /*Resolución desde 1200*/
 
 @media only screen and (min-width: 1200px){
+	
+	#botonera img{
+		width: 120px;
+		}
+	#botonera ul li a{
+		font-size: 3.2rem;
+		}
 
-.margin{
-	margin-right: auto;
-	margin-left: auto;
-}
+	.margin{
+		margin-right: auto;
+		margin-left: auto;
+		}
 
 
 	.contenido__grid--mainindex{
