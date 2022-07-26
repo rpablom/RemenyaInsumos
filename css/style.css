@@ -18,11 +18,6 @@ html{
 	margin-right: auto;
 }
 
-.marginy{
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
 #botonera img{
 	width: 20%;
 	height: auto;
@@ -46,8 +41,8 @@ html{
 /*Bloque contenido*/
 
 .contenido__galeria--ajustes{
-	width: 90%;
-	height: 90%;
+	width: 95%;
+	height: inherit;
 	margin: 0.5%;
 	overflow: auto;
 	align-content: center;
