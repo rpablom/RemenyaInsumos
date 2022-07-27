@@ -1,0 +1,160 @@
+.contenido__galeria--ajustes{
+	width: 95%;
+	height: inherit;
+	margin: 0.5%;
+	overflow: auto;
+	align-content: center;
+}
+
+.contenido__quienessomos--ajustes{
+	width: 90%;
+	margin: 0.5%;
+	border: double rgb(85,131,50) 1px;
+	overflow: auto;
+	background-color: rgb(67,99,43,.95);
+	&:hover{
+		transform: scale(1.15);
+		transition: transform 2s;
+	}
+}
+
+main{
+	section{
+		article{
+
+			img{
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				align-self: center;	
+			}
+		}
+	}
+}
+
+section{
+	article{
+			display: inline-block;
+			justify-content: center
+	}
+}
+
+.tabla__insumos{
+	border: solid rgb(129,145,107) 100%;
+	align-content: center;
+	text-align: center;
+	background-color: rgb(214,201,162,.6);
+	width: 85%;
+	height: 100%;
+	display: inline-block;
+	margin: 1% 1.4%;
+	@media only screen and (min-width: 1200px){
+		width: 30%;
+	}
+}
+
+.tabla__kitsAccesorios{
+	border: solid rgb(129,145,107) 100%;
+	align-content: center;
+	text-align: center;
+	background-color: rgb(214,201,162,.6);
+	width: 75%;
+	height: 100%;
+	display: inline-block;
+	margin: 1% 9%;
+}
+
+.tabla__texto--md{
+	font-size: 1.8rem;
+	border: solid white .2rem;
+	background-color: rgb(214,201,162,.8);	
+	width: 100%;
+	@media only screen and (min-width: 768px){
+		font-size: 2.2rem;
+		border: solid white .3rem;
+	}
+	@media only screen and (min-width: 1200px){
+		font-size: 2.5rem;
+		border: solid white .5rem;
+	}
+}
+
+table{
+	tr{
+		td{
+			text-align: center;
+			align-content: center;
+		}
+	}
+}
+
+.formulario__contacto{
+	border: solid rgb(129,145,107) 100%;
+	text-align: center;
+	background-color: rgb(214,201,162,.9);
+	height: inherit;
+	margin: 1% 1%;
+}
+
+.formulario__contacto--agrup{
+	display: inline-block;
+	border: solid rgb(129,145,107) 100%;
+	align-content: center;
+	text-align: center;
+	background-color: rgb(214,201,162,.9);
+	margin: 2.7%;
+	}
+
+.contenido__mainindex{
+	@media only screen and (min-width: 768px){
+		display: grid;
+		width: 100%;
+		}
+	}
+
+.contenido__grid--mainindex{
+	@media only screen and (min-width: 768px){
+		justify-items: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+		"quienessomos galeria"
+		"mision mision";
+		}
+	@media only screen and (min-width: 1200px){
+		grid-template-areas:
+		"quienessomos galeria"
+		"mision galeria";
+		}
+	}
+
+	#quienesssomos{
+		@media only screen and (min-width: 768px){
+		grid-area: quienessomos;
+		}	
+	}
+
+	#galeria{
+		@media only screen and (min-width: 768px){
+		grid-area: galeria;
+		}
+	}
+	
+	#mision{
+		@media only screen and (min-width: 768px){
+		grid-area: mision;
+		}
+	}
+
+.margin{
+	@media only screen and (min-width: 1200px){
+		margin-right: auto;
+		margin-left: auto;
+		}	
+	}
+
+.contenido__maintablas{
+	@media only screen and (min-width: 1200px){
+		display: flex;
+		}
+	}
