@@ -12,13 +12,13 @@
 		height: auto;
 		text-decoration: none;
 		padding: 0.5rem;
-		@media only screen and (min-width: 768px){
+		@include medias(tablet){
 			width: 70px;
 		}
-		@media only screen and (min-width: 992px){
+		@include medias(note){
 			width: 100px;
 		}
-		@media only screen and (min-width: 1200px){
+		@include medias(desktop){
 			width: 120px;
 		}
 		&:hover{
@@ -37,19 +37,19 @@
 				display: flex;
 				justify-content: center;
 				text-decoration: none;
-				font-size: 2.2rem;
-				color: rgb(67,99,43);
-				@media only screen and (min-width: 768px){
+				font-size: map-get($map:$size,$key:'dosdos');
+				color: map-get($map:$colores,$key:'nueve');
+				@include medias(tablet){
 					font-size: 2.5rem;
 				}
-				@media only screen and (min-width: 992px){
+				@include medias(note){
 					width: 100px;
 				}
-				@media only screen and (min-width: 1200px){
-					font-size: 3.2rem;
+				@include medias(desktop){
+					font-size: map-get($map:$size,$key:'tresdos');
 				}
 				&:hover{
-					color: rgb(42,71,45);
+					color: map-get($map:$colores,$key:'doce');
 					font-weight: 800;
 				}
 			}

@@ -9,7 +9,7 @@
 .contenido__quienessomos--ajustes{
 	width: 90%;
 	margin: 0.5%;
-	border: double rgb(85,131,50) 1px;
+	border: double map-get($map:$colores,$key:'siete') 1px;
 	overflow: auto;
 	background-color: rgb(67,99,43,.95);
 	&:hover{
@@ -40,24 +40,24 @@ section{
 }
 
 .tabla__insumos{
-	border: solid rgb(129,145,107) 100%;
+	border: solid map-get($map:$colores,$key:'diez') 100%;
 	align-content: center;
 	text-align: center;
-	background-color: rgb(214,201,162,.6);
+	background-color: $bgTertiary;
 	width: 85%;
 	height: 100%;
 	display: inline-block;
 	margin: 1% 1.4%;
-	@media only screen and (min-width: 1200px){
+	@include medias(desktop){
 		width: 30%;
 	}
 }
 
 .tabla__kitsAccesorios{
-	border: solid rgb(129,145,107) 100%;
+	border: solid map-get($map:$colores,$key:'diez') 100%;
 	align-content: center;
 	text-align: center;
-	background-color: rgb(214,201,162,.6);
+	background-color: $bgTertiary;
 	width: 75%;
 	height: 100%;
 	display: inline-block;
@@ -65,16 +65,16 @@ section{
 }
 
 .tabla__texto--md{
-	font-size: 1.8rem;
+	font-size: map-get($map:$size,$key:'unoocho');
 	border: solid white .2rem;
-	background-color: rgb(214,201,162,.8);	
+	background-color: $bgColor;	
 	width: 100%;
-	@media only screen and (min-width: 768px){
-		font-size: 2.2rem;
+	@include medias(tablet){
+		font-size: map-get($map:$size,$key:'dosdos');
 		border: solid white .3rem;
 	}
-	@media only screen and (min-width: 1200px){
-		font-size: 2.5rem;
+	@include medias(desktop){
+		font-size: map-get($map:$size,$key:'doscinco');
 		border: solid white .5rem;
 	}
 }
@@ -89,31 +89,31 @@ table{
 }
 
 .formulario__contacto{
-	border: solid rgb(129,145,107) 100%;
+	border: solid map-get($map:$colores,$key:'diez') 100%;
 	text-align: center;
-	background-color: rgb(214,201,162,.9);
+	background-color: $bgSecondary;
 	height: inherit;
 	margin: 1% 1%;
 }
 
 .formulario__contacto--agrup{
 	display: inline-block;
-	border: solid rgb(129,145,107) 100%;
+	border: solid map-get($map:$colores,$key:'diez') 100%;
 	align-content: center;
 	text-align: center;
-	background-color: rgb(214,201,162,.9);
+	background-color: $bgSecondary;
 	margin: 2.7%;
 	}
 
 .contenido__mainindex{
-	@media only screen and (min-width: 768px){
+	@include medias(tablet){
 		display: grid;
 		width: 100%;
 		}
 	}
 
 .contenido__grid--mainindex{
-	@media only screen and (min-width: 768px){
+	@include medias(tablet){
 		justify-items: center;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
@@ -121,7 +121,7 @@ table{
 		"quienessomos galeria"
 		"mision mision";
 		}
-	@media only screen and (min-width: 1200px){
+	@include medias(desktop){
 		grid-template-areas:
 		"quienessomos galeria"
 		"mision galeria";
@@ -129,32 +129,32 @@ table{
 	}
 
 	#quienesssomos{
-		@media only screen and (min-width: 768px){
+		@include medias(tablet){
 		grid-area: quienessomos;
 		}	
 	}
 
 	#galeria{
-		@media only screen and (min-width: 768px){
+		@include medias(tablet){
 		grid-area: galeria;
 		}
 	}
 	
 	#mision{
-		@media only screen and (min-width: 768px){
+		@include medias(tablet){
 		grid-area: mision;
 		}
 	}
 
 .margin{
-	@media only screen and (min-width: 1200px){
+	@include medias(desktop){
 		margin-right: auto;
 		margin-left: auto;
 		}	
 	}
 
 .contenido__maintablas{
-	@media only screen and (min-width: 1200px){
+	@include medias(desktop){
 		display: flex;
 		}
 	}
