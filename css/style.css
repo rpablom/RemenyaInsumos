@@ -126,7 +126,7 @@ ul {
 
 body {
   font-family: "Shadows Into Light", cursive, sans-serif;
-  background-image: url(../img/semilla4.png);
+  background-image: url(../img/semilla4.webp);
   background-attachment: fixed;
 }
 
@@ -230,9 +230,6 @@ p {
 #botonera img:hover {
   transform: scale(1.1);
   transition: transform 0.5s;
-}
-#botonera .space-evenly {
-  justify-content: space-evenly;
 }
 #botonera ul {
   display: flex;
