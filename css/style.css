@@ -379,12 +379,18 @@ table tr td {
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "quienessomos galeria" "mision mision";
+    grid-template-areas: "novedades galeria" "quienessomos galeria" "mision mision";
   }
 }
 @media (min-width: 1200px) {
   .contenido__grid--mainindex {
-    grid-template-areas: "quienessomos galeria" "mision galeria";
+    grid-template-areas: "novedades novedades" "quienessomos galeria" "mision galeria";
+  }
+}
+
+@media (min-width: 768px) {
+  #novedades {
+    grid-area: novedades;
   }
 }
 

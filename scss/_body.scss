@@ -118,14 +118,22 @@ table{
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
 		grid-template-areas:
+		"novedades galeria"
 		"quienessomos galeria"
 		"mision mision";
 		}
 	@include medias(desktop){
 		grid-template-areas:
+		"novedades novedades"
 		"quienessomos galeria"
 		"mision galeria";
 		}
+	}
+
+	#novedades{
+		@include medias(tablet){
+		grid-area: novedades;
+		}	
 	}
 
 	#quienesssomos{
