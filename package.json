@@ -1,7 +1,7 @@
 {
   "name": "remenyainsumos11",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio web de Remenya, Insumos cerveceros. Comercialización de insumos para la producción de cerveza artesanal",
   "main": "index.js",
   "dependencies": {
     "anymatch": "^3.1.2",
@@ -31,7 +31,7 @@
     "type": "git",
     "url": "git+https://github.com/rpablom/RemenyaInsumos11.git"
   },
-  "author": "",
+  "author": "rpablom",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rpablom/RemenyaInsumos11/issues"
