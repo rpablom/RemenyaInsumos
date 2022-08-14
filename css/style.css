@@ -465,7 +465,6 @@ table tr td {
 
 .pie__texto {
   color: black;
-  width: 30%;
 }
 .pie__texto:hover {
   transform: scale(1.5);
