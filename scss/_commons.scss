@@ -53,16 +53,16 @@ $size:(
 		@media(min-width: 320px){
 			@content;
 		}
+	@if $breakpoint == mobile2{
+		@media(min-width: 438px){
+			@content;
+		}		
 	}
 	@if $breakpoint == tablet{
 		@media(min-width: 768px){
 			@content;
 		}
 	}
-	@if $breakpoint == note{
-		@media(min-width: 992px){
-			@content;
-		}
 	}
 	@if $breakpoint == desktop{
 		@media(min-width: 1200px){
@@ -144,13 +144,17 @@ h5{
 
 h6{
 	@extend .hClass;
-	color: map-get($map:$colores,$key:'doce');
-	font-size: .8rem;	
+	color: black;
+	font-size: map-get($map:$size,$key:'unodos');
+	@include medias(mobile2){
+		font-size: map-get($map:$size,$key:'unoocho');	
+	}
 	@include medias(tablet){
-		font-size: map-get($map:$size,$key:'unoseis');
+		font-size: map-get($map:$size,$key:'unonueve');
 	}
 	@include medias(desktop){
 		font-size: map-get($map:$size,$key:'doscinco');
+		color: map-get($map:$colores,$key:'doce');
 	}
 }
 
