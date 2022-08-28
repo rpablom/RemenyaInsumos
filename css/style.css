@@ -270,22 +270,23 @@ p {
 
 .contenido__galeria--ajustes {
   width: 95%;
-  height: inherit;
-  margin: 0.5%;
+  height: 30%;
+  margin: 1%;
   overflow: auto;
   align-content: center;
+}
+@media (min-width: 768px) {
+  .contenido__galeria--ajustes {
+    height: inherit;
+  }
 }
 
 .contenido__quienessomos--ajustes {
   width: 90%;
-  margin: 0.5%;
+  margin: 2%;
   border: double #558332 1px;
   overflow: auto;
   background-color: rgba(67, 99, 43, 0.95);
-}
-.contenido__quienessomos--ajustes:hover {
-  transform: scale(1.15);
-  transition: transform 2s;
 }
 
 main section article img {
@@ -368,6 +369,55 @@ table tr td {
   margin: 2.7%;
 }
 
+.card-content {
+  justify-content: center;
+  align-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-img {
+  width: 95%;
+  height: 60%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 438px) {
+  .card-img {
+    height: 55%;
+  }
+}
+@media (min-width: 1200px) {
+  .card-img {
+    height: 35%;
+  }
+}
+
+.card-style {
+  color: black;
+  background-color: #bda868;
+  padding: 1.5%;
+  justify-content: center;
+}
+
+.card-btn {
+  background-color: #43632b;
+  justify-content: center;
+  color: #d6c9a2;
+  text-align: center;
+  font-size: 1.2rem;
+}
+@media (min-width: 768px) {
+  .card-btn {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .card-btn {
+    font-size: 2rem;
+  }
+}
+
 @media (min-width: 768px) {
   .contenido__mainindex {
     display: grid;
@@ -380,7 +430,7 @@ table tr td {
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "novedades galeria" "quienessomos galeria" "mision mision";
+    grid-template-areas: "novedades novedades" "galeria galeria" "quienessomos mision";
   }
 }
 @media (min-width: 1200px) {

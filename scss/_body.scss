@@ -1,21 +1,21 @@
 .contenido__galeria--ajustes{
 	width: 95%;
-	height: inherit;
-	margin: 0.5%;
+	height: 30%;
+	margin: 1%;
 	overflow: auto;
 	align-content: center;
+	@include medias(tablet){
+		height: inherit;
+	}
 }
+
 
 .contenido__quienessomos--ajustes{
 	width: 90%;
-	margin: 0.5%;
+	margin: 2%;
 	border: double map-get($map:$colores,$key:'siete') 1px;
 	overflow: auto;
 	background-color: rgb(67,99,43,.95);
-	&:hover{
-		transform: scale(1.15);
-		transition: transform 2s;
-	}
 }
 
 main{
@@ -105,6 +105,47 @@ table{
 	margin: 2.7%;
 	}
 
+.card-content{
+	justify-content: center;
+	align-content: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.card-img{
+	width: 95%;
+	height: 60%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	@include medias(mobile2){
+		height: 55%;
+	}
+	@include medias(desktop){
+		height: 35%;
+	}
+}
+
+.card-style{
+	color: black;
+	background-color: map-get($map:$colores,$key:'uno');
+	padding: 1.5%;
+	justify-content: center;
+}
+
+.card-btn{
+	background-color: map-get($map:$colores,$key:'nueve');
+	justify-content: center;
+	color: map-get($map:$colores,$key:'dos');
+	text-align: center;
+	font-size: map-get($map:$size,$key:'unodos');
+	@include medias(tablet){
+		font-size: map-get($map:$size,$key:'unoseis');
+	}
+	@include medias(desktop){
+		font-size: map-get($map:$size,$key:'dos');
+	}
+}
+
 .contenido__mainindex{
 	@include medias(tablet){
 		display: grid;
@@ -118,9 +159,9 @@ table{
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
 		grid-template-areas:
-		"novedades galeria"
-		"quienessomos galeria"
-		"mision mision";
+		"novedades novedades"
+		"galeria galeria"
+		"quienessomos mision";
 		}
 	@include medias(desktop){
 		grid-template-areas:
