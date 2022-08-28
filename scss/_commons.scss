@@ -53,6 +53,7 @@ $size:(
 		@media(min-width: 320px){
 			@content;
 		}
+	}
 	@if $breakpoint == mobile2{
 		@media(min-width: 438px){
 			@content;
@@ -62,7 +63,6 @@ $size:(
 		@media(min-width: 768px){
 			@content;
 		}
-	}
 	}
 	@if $breakpoint == desktop{
 		@media(min-width: 1200px){
@@ -177,6 +177,9 @@ header{
 	height: 8rem;
 	border-bottom: solid rgb(164,144,86,.75) 1rem;
 	border-top: solid map-get($map:$colores,$key:'dos') 1rem;
+	@include medias(mobile2){
+		height: 12rem;
+	}
 	@include medias(tablet){
 		height: 16rem;
 	}
