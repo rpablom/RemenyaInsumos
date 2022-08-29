@@ -230,3 +230,20 @@ p{
 	align-items: center;
 	flex-wrap: wrap;
 }
+
+.error{
+	color: map-get($map:$colores,$key:'doce');
+	background-color: map-get($map:$colores,$key:'dos');
+	padding: 0;
+	margin: 0;
+	width: inherit;
+	height: inherit;
+	border: none;
+	font-size: map-get($map:$size,$key:'cuatro');
+}
+
+.error-texto{
+	@extend .error;
+		font-size: map-get($map:$size,$key:'dosdos');
+		color: map-get($map:$colores,$key:'tres');
+}
