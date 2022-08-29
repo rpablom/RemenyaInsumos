@@ -382,20 +382,39 @@ table tr td {
   margin-bottom: 2rem;
 }
 
-.card-img {
+.card-img, .card-img-tablas {
   width: 95%;
   height: 60%;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 @media (min-width: 438px) {
-  .card-img {
+  .card-img, .card-img-tablas {
     height: 55%;
   }
 }
 @media (min-width: 1200px) {
-  .card-img {
+  .card-img, .card-img-tablas {
     height: 35%;
+  }
+}
+
+.card-img-tablas {
+  height: 40%;
+}
+@media (min-width: 438px) {
+  .card-img-tablas {
+    height: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .card-img-tablas {
+    height: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .card-img-tablas {
+    height: 45%;
   }
 }
 
@@ -404,6 +423,7 @@ table tr td {
   background-color: #bda868;
   padding: 1.5%;
   justify-content: center;
+  align-content: center;
 }
 
 .card-btn, .contacto-btn {
