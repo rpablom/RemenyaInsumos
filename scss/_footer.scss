@@ -20,23 +20,6 @@
 	}
 }
 
-.pie__mapa--ajustes{
-	height: auto;
-	align-content: initial;
-}
-
-.pie__mapa--interno{
-	width: 50%;
-	height: 0%;
-	align-content: center;
-	background-color: rgb(185,194,193,.85);
-	overflow: hidden;
-	@include medias(tablet){
-		margin: 1rem;
-		height: 10%;
-	}
-}
-
 
 .pie__redes--ajustes{
 	width: 30%;

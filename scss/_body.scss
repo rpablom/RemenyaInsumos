@@ -105,6 +105,12 @@ table{
 	margin: 2.7%;
 	}
 
+.mapa{
+	margin: 2%;
+	height: 20%;
+	align-content: center;
+}
+
 .card-content{
 	justify-content: center;
 	align-content: center;
@@ -145,6 +151,11 @@ table{
 		font-size: map-get($map:$size,$key:'dos');
 	}
 }
+
+.contacto-btn{
+	@extend .card-btn;
+		background-color: map-get($map:$colores,$key:'doce');
+	}
 
 .contenido__mainindex{
 	@include medias(tablet){
